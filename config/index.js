@@ -59,7 +59,7 @@ export const config = {
     },
     {
       name: "杜一鸣",
-      id: "ov9NB5_olOR2jlZzu3oqNhEGT1Hg",
+      id: "",
       useTemplateId: "tqBXgltiPr_IbgymVm3i5X19AHcIIhVq-qMge6W2gYQ",
       province: "河南",
       city: "郑州",
