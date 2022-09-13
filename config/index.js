@@ -25,7 +25,7 @@ export const config = {
       // 想要发送的人的名字
       name: "郝若菡",
       // 扫码关注你的微信测试号后生成的一段字符串，在测试号后台能看到
-      id: "ov9NB5_olOR2jlZzu3oqNhEGT1Hg",
+      id: "ov9NB50Mgu5TlDwceLtDDqROpX-k",
       // 你想对他发送的模板消息的模板ID
       useTemplateId: "tqBXgltiPr_IbgymVm3i5X19AHcIIhVq-qMge6W2gYQ",
       // 所在省份
@@ -59,15 +59,30 @@ export const config = {
     },
     {
       name: "杜一鸣",
-      id: "",
+      id: "ov9NB5_olOR2jlZzu3oqNhEGT1Hg",
       useTemplateId: "tqBXgltiPr_IbgymVm3i5X19AHcIIhVq-qMge6W2gYQ",
       province: "河南",
       city: "郑州",
       horoscopeDate: '01-29',
       horoscopeDateType: '今日',
       openUrl: "https://wangxinleo.cn",
-      festivals: [],
-      customizedDateList: []
+           festivals: [
+        // 注意：此条配置日期为阴历日期，因为`type`中 “生日” 之前有 * 符号
+        {"type": "*生日", "name": "郝若菡", "year": "2002", "date": "11-23"},
+        //{"type": "节日", "name": "结婚纪念日", "year": "2020", "date": "09-03"},
+        // 注意：此条配置日期为阳历日期，因为`type`中 “生日” 之前没有 * 符号
+        //{"type": "生日", "name": "李四", "year": "1996", "date": "09-31"},
+        //{"type": "节日", "name": "被搭讪纪念日", "year": "2021", "date": "09-01"},
+      ],
+      // 专属纪念日/倒数日，如果你在这里填写了纪念日/倒数日，就不会计算CUSTOMIZED_DATE_LIST的日子了, 和CUSTOMIZED_DATE_LIST的配置方法相同，可以往下查看，我这里就不重复写了
+      customizedDateList: [
+        // 在一起的日子
+        //{"keyword": "love_day", date: "2022-09-08"},
+        // 结婚纪念日
+        //{"keyword": "marry_day", date: "2022-09-09"},
+        // 退伍日
+        //{"keyword": "ex_day", date: "2022-09-10"},
+      ]
     },
     {
       name: "老婆2",
@@ -78,7 +93,7 @@ export const config = {
       horoscopeDate: '',
       horoscopeDateType: '',
       openUrl: "https://wangxinleo.cn",
-      festivals: [],
+      
       customizedDateList: []
     },
     {
